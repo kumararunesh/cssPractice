@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Chapter2</title>
+    <style>
+        *{
+            font-family:'Courier New', Courier, monospace;
+        }
+        h1,h3{
+            color:#b92b27;        }
+
+           #login{
+            color:white;
+            background-color: blue;
+           } 
+
+           #signup{
+            background-color: #b92b27;
+           }
+           
+           #fun{
+            color:black;
+           }
+           .fun{
+            color:green;
+           }
+          
+           p a{
+            color:purple;
+            background-color: yellow;;
+           }
+           nav li{
+            background-color: green;
+           }
+           p+h3{
+            background-color: rgb(60, 21, 21);
+           }
+           .upvote{
+            background-color: rgb(105, 207, 105);
+           }
+           .upvote+button{
+            color:aqua
+           }
+           h4>span{
+            color: red;
+           }
+           div>input{
+            background-color: #bf9392;
+           }
+           input[type="text"]{
+            color:red;
+           }
+           input[type="password"]{
+            color:green;
+           }
+            #myId p{
+                color: yellowgreen;
+            }
+            div[id="myId"] p{
+                background-color: yellowgreen;
+            }
+
+            p:active{
+                 background-color: yellowgreen;   
+                 text-decoration: underline;
+                 font-weight:900;
+            }
+
+            button:active{
+                background-color: black;
+                color:white ;
+            }
+            h1::first-letter{
+                color:green;
+            }
+            h1::selection{
+                color:aqua;
+            }
+            #hello{
+                background-color: blue ;
+            }
+
+           
+    </style>
+  </head>
+  <body>
+    <header>
+        <h1>Quora 
+            <button id="login">Log in</button>
+            <button id="signup">Sign up</button>
+        </h1>
+        <div>
+            <input type="text" placeholder="username">
+            <input type="password" placeholder="password">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/following">Following</a></li>
+                <li><a href="/answer">Answer</a></li>
+                <li><a href="/spaces">Spaces</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <p>
+        Adam &nbsp;&nbsp;
+        <a class="follow" href="/adam">Follow /abc</a></span>
+        </p>
+        <h3>What is the highest salary for a spacex engineer?</h3>
+        <span>
+            <button class="upvote">+upvote</button>
+            <button>answer</button>
+        </span>
+        <hr />
+
+        <p>
+        Bob &nbsp;&nbsp;
+        <a class="follow" href="/bob">Follow xyz</a>
+        </p>
+        <h3>What is the syllabus for JEE 2024?</h3>
+        <span>
+            <button class="upvote">+upvote</button>
+            <button>answer</button>
+        </span>
+        <hr />
+
+        <p>
+        Catlyn &nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="follow" href="/catlyn">Follow pqr</a>
+        </p>
+        <h3>Why is the sky blue?</h3>
+        <span>
+            <button class="upvote">+upvote</button>
+            <button>answer</button>
+        </span>
+        <hr />
+
+        <p>
+            Dan &nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="follow" href="/dan">Follow pqr</a>
+            </p>
+            <h3>Why is the sky blue?</h3>
+            <span>
+                <button class="upvote">+upvote</button>
+                <button>answer</button>
+            </span>
+            <hr />
+    </main>
+
+    <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. <a href="google.com">google</a> quam ut neque iusto repudiandae cumque nobis suscipit sapiente pariatur! </p>
+
+    <p>Lorem, ipsum.</p>
+    <h3>Lorem, ipsum dolor.</h3>
+
+    <h4>Lorem ipsum dolor, sit amet<span>Hello ji </span> consectetur adipisicing elit. Expedita, ratione.</h4>
+
+<div style ="background-color:Red" id="myId"><p>Arunesh ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, ducimus.</p></div>
+    
+<div  id="hello" style="background-color: red"><p>Hello ji jijij</p></div>
+
+  </body>
+</html>
